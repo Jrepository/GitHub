@@ -26,3 +26,11 @@ GitHub相关操作
 >step3:　git log --pretty=oneline 　　再次查看当前提交的日志,确认是否成功撤销,当然,你也可以不看,基本上都会成功,保险一下,看看呗
 >
 >step5:　git push origin 分支 --force 　　强制提交当前版本号，以达到撤销版本号的目的.必须添加参数force进行强制提交，否则会提交失败,报错原因：本地项目版本号低于远端仓库版本号。(master 代表分支名称,默认是 master，或者也可以直接用git push --force)
+
+## 撤销中间某次提交信息
+
+>step1:　git log --pretty=oneline 　　查看当前提交的日志
+>
+>step2:　git revert XXX 　　XXX是commitID(ab1cd23....)需要撤销
+>
+>step3:　git push 　　推送到远程
