@@ -3,6 +3,22 @@ GitHub相关操作
 
 <img width="512" alt="image" src="https://user-images.githubusercontent.com/38684698/155286118-179c55ca-88ee-43e1-9147-33b5847411f4.png">
 
+在github页面创建项目后,根据提示信息将本地项目上传的github上，且分支为master
+
+echo "# algorithm" >> README.md
+
+git init
+
+git add README.md
+
+git commit -m "提交备注信息"
+
+git branch -M master
+
+git remote add origin git@github_private:Jrepository/XXX.git
+
+git push -u origin master
+
 ## 本地项目推送到github
 
 >step1:　git init
