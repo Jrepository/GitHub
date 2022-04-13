@@ -33,6 +33,10 @@ git push -u origin master
 >
 >其他：本地项目取消与github的关联：git remote remove origin
 
+## 远程分支覆盖本地分支
+
+> git reset --hard origin/XXX
+
 ## 撤销push文件
 
 >step1:　git log --pretty=oneline　　 查看当前提交的日志
